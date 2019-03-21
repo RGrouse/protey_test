@@ -1,0 +1,47 @@
+[
+    {
+        "test_id": 1,
+        "test_parameters": {
+            "request_path": "/search"
+        },
+        "request_parameters": {
+            "postalcode": 1234
+        },
+        "expected_result":  [{"place_id": 199773189, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["47.931584449069", "47.931684449069", "106.92408645682", "106.92418645682"], "lat": "47.9316344490688", "lon": "106.924136456822", "display_name": "Улаанбаатар, 1234, Монгол улс", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 200339670, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["46.158398580339", "46.158498580339", "14.565448268449", "14.565548268449"], "lat": "46.1584485803387", "lon": "14.5654982684485", "display_name": "Mengeš, Osrednjeslovenska, 1234, Slovenija", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199506990, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["46.175253973214", "46.175353973214", "6.1550241392857", "6.1551241392857"], "lat": "46.1753039732143", "lon": "6.15507413928572", "display_name": "Veyrier, Genève, 1234, Schweiz/Suisse/Svizzera/Svizra", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199761476, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["37.5606297", "37.5607297", "127.15400455", "127.15410455"], "lat": "37.5606797", "lon": "127.15405455", "display_name": "고덕1동, 서울, 1234, 대한민국", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199724341, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["18.9971493", "18.9972493", "74.1699447", "74.1700447"], "lat": "18.9971993", "lon": "74.1699947", "display_name": "Pune District, Maharashtra, 1234, India", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 200251569, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["14.554373346731", "14.554473346731", "121.00512448999", "121.00522448999"], "lat": "14.5544233467314", "lon": "121.005174489993", "display_name": "San Isidro, Metro Manila, 1234, Philippines", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199768576, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["49.595669248748", "49.595769248748", "6.1406532338978", "6.1407532338978"], "lat": "49.5957192487483", "lon": "6.14070323389782", "display_name": "Bonnevoie, 1234, Lëtzebuerg", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199732334, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["33.6418582", "33.6419582", "50.076142233333", "50.076242233333"], "lat": "33.6419082", "lon": "50.0761922333333", "display_name": "رستاق, استان مرکزی, 1234, \u200fایران\u200e", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199773122, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["18.555294075", "18.555394075", "96.402140375", "96.402240375"], "lat": "18.555344075", "lon": "96.402190375", "display_name": "ဖြူး, ပဲခူးတိုင်းဒေသကြီး အရှေ့ခြမ်း, ပဲခူးတိုင်းဒေသကြီး (Bago), 1234, မြန်မာ", "class": "place", "type": "postcode", "importance": 0.335}, {"place_id": 199720125, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["-0.30420583127739", "-0.30410583127739", "100.36916970134", "100.36926970134"], "lat": "-0.304155831277395", "lon": "100.369219701337", "display_name": "Agam, Sumatera Barat, 1234, Indonesia", "class": "place", "type": "postcode", "importance": 0.335}]
+    },
+
+    {
+        "test_id": 2,
+        "test_parameters": {
+            "request_path": "/search"
+        },
+        "request_parameters": {
+            "postalcode": 4321,
+            "limit": 1
+        },
+        "expected_result": [{"place_id": 200248230, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["58.831677957317", "58.831777957317", "5.7140783227273", "5.7141783227273"], "lat": "58.8317279573171", "lon": "5.71412832272728", "display_name": "Sandnes, Rogaland, 4321, Norge", "class": "place", "type": "postcode", "importance": 0.335}]
+    },
+
+    {
+        "test_id": 3,
+        "test_parameters": {
+            "request_path": "/search"
+        },
+        "request_parameters": {
+            "q": "Санкт-Петербург, Большой Сампсониевский 60А"
+        },
+        "expected_result": [{"place_id": 189011795, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 552045023, "boundingbox": ["59.9883598", "59.9884188", "30.3336845", "30.3336871"], "lat": "59.9883598", "lon": "30.3336871", "display_name": "Большой Сампсониевский проспект, Выборгская сторона, округ Сампсониевское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "primary", "importance": 0.5}, {"place_id": 113177231, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 160779732, "boundingbox": ["59.9948435", "59.994894", "30.3310791", "30.3311004"], "lat": "59.9948435", "lon": "30.3311004", "display_name": "Большой Сампсониевский проспект, Выборгская сторона, округ Светлановское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "primary", "importance": 0.5}, {"place_id": 188168116, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 541363197, "boundingbox": ["59.984309", "59.984475", "30.3352271", "30.3353294"], "lat": "59.9843416", "lon": "30.3352757", "display_name": "Большой Сампсониевский проспект 29, Выборгская сторона, округ Сампсониевское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "primary", "importance": 0.5}, {"place_id": 84712139, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 33997639, "boundingbox": ["59.9582519", "59.9589765", "30.3448717", "30.3453454"], "lat": "59.9587429", "lon": "30.3451929", "display_name": "Большой Сампсониевский проспект, Выборгская сторона, округ Сампсониевское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "secondary", "importance": 0.5}, {"place_id": 91181243, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 61604690, "boundingbox": ["59.9558595", "59.9567516", "30.3432033", "30.3438775"], "lat": "59.9558595", "lon": "30.3432033", "display_name": "Большой Сампсониевский проспект, Выборгская сторона, округ Сампсониевское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "tertiary", "importance": 0.5}, {"place_id": 91426510, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 61604687, "boundingbox": ["59.9549436", "59.9558595", "30.3428844", "30.3433211"], "lat": "59.9554122", "lon": "30.3429493", "display_name": "Большой Сампсониевский проспект, Выборгская сторона, округ Сампсониевское, Выборгский район, Санкт-Петербург, Северо-Западный федеральный округ, 190000, РФ", "class": "highway", "type": "tertiary_link", "importance": 0.47500000000000003}]
+    },
+
+    {
+        "test_id": 4,
+        "test_parameters": {
+            "request_path": "/search"
+        },
+        "request_parameters": {
+            "postalcode": 2321,
+            "limit": 1
+        },
+        "expected_result": [{"place_id": 200247476, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "boundingbox": ["60.795041248879", "60.795141248879", "11.095780865919", "11.095880865919"], "lat": "60.7950912488789", "lon": "11.0958308659193", "display_name": "Hamar, Hedmark, 2321, Norge", "class": "place", "type": "postcode", "importance": 0.335}]
+    }
+]

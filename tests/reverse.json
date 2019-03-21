@@ -1,0 +1,48 @@
+[
+    {
+        "test_id": 1,
+        "test_parameters": {
+            "request_path": "/reverse"
+        },
+        "request_parameters": {
+            "lat":"60.7950912488789",
+            "lon":"11.0958308659193",
+            "limit": 1
+        },
+        "expected_result": {"place_id": 81779756, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 28391092, "lat": "60.7952242933338", "lon": "11.095872694203", "display_name": "Sagvegen, Hamar, Hedmark, 2321, Norge", "address": {"road": "Sagvegen", "town": "Hamar", "county": "Hedmark", "postcode": "2321", "country": "Norge", "country_code": "no"}, "boundingbox": ["60.7948157", "60.796749", "11.0955282", "11.0995442"]}
+    },
+
+    {
+        "test_id": 2,
+        "test_parameters": {
+            "request_path": "/reverse"
+        },
+        "request_parameters": {
+            "lat": "46.1584485803387",
+            "lon": "14.5654982684485"
+        },
+        "expected_result": {"place_id": 236901627, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "way", "osm_id": 619263096, "lat": "46.1586933", "lon": "14.5655760373366", "display_name": "Tjasa Ales s.p., 9, Gregčeva ulica, Mengeš, Upravna Enota Domžale, Osrednjeslovenska, 1234, Slovenija", "address": {"hairdresser": "Tjasa Ales s.p.", "house_number": "9", "road": "Gregčeva ulica", "town": "Mengeš", "county": "Upravna Enota Domžale", "state_district": "Osrednjeslovenska", "postcode": "1234", "country": "Slovenija", "country_code": "si"}, "boundingbox": ["46.158624", "46.1587625", "14.5654683", "14.5656838"]}
+    },
+
+    {
+        "test_id": 3,
+        "test_parameters": {
+            "request_path": "/reverse"
+        },
+        "request_parameters": {
+            "lat":"60"
+        },
+        "expected_result": {"error": {"code": 400, "message": "Need coordinates or OSM object to lookup."}}
+    },
+
+    {
+        "test_id": 4,
+        "test_parameters": {
+            "request_path": "/reverse"
+        },
+        "request_parameters": {
+            "limit": 1
+        },
+        "expected_result": {"error": {"code": 400, "message": "Need coordinates or OSM object to lookup."}}
+    }
+]
